@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 let valor:string;
 
-valor=prompt('Ingrese su nombre:','');
+valor=prompt('Por favor Ingrese su nombre:','');
 
 @Component({
   selector: 'app-root',
