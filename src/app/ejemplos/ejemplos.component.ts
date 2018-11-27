@@ -7,12 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EjemplosComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-  	show:boolean=true;
+	show:boolean=true;
 
 	activo:string="";
 
@@ -21,5 +16,11 @@ export class EjemplosComponent implements OnInit {
 	{nombre:'Jose',apellido:'Perez',correo:'jose@gmail.com'},
 	{nombre:'Luis',apellido:'Gonzales',correo:'Luis@gmail.com'}
 	]
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
 
 }
