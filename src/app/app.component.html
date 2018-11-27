@@ -1,12 +1,17 @@
+<app-cabecera></app-cabecera>
+
+
 <div class="container">
+
+	<!--Para las rutas-->
+	<router-outlet></router-outlet>
+	<!--Para las rutas-->
 	
 	<h1 class=" bg-dark text-center text-white my-4 py-4">Ngif show = {{show}}</h1>
 
 	<div class="row">
 		
 		<div class="col-md">
-
-		<h1 class="text-center">Primera con ngIF and Else</h1>
 
 			<div class=" text-info" *ngIf="show; else showDos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nesciunt sunt inventore neque aspernatur sit aliquam doloremque maiores natus, provident velit qui beatae quia placeat itaque, nulla dolor eligendi. Voluptas.</div>
 	
@@ -31,8 +36,6 @@
 	<div class="row">
 
 		<div class="col-md">
-		
-		<h1 class="text-center">segunda con ngClass</h1>
 
 			<div class="text-info d-none" [ngClass]="{'d-block':activo=='primero'}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nesciunt sunt inventore neque aspernatur sit aliquam doloremque maiores natus, provident velit qui beatae quia placeat itaque, nulla dolor eligendi. Voluptas.</div>
 			
@@ -49,10 +52,25 @@
 
 	<h1 class=" bg-dark text-center text-white my-4 py-4">[ngFor]</h1>
 
-  	<div class="row">
-    	
-
-    </div>
-
-
+  	<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+      <th scope="col">Correo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let arreglo of arreglos; index as i">
+      <th scope="row">{{i+1}}</th>
+      <td>{{arreglo.nombre}}</td>
+      <td>{{arreglo.apellido}}</td>
+      <td>{{arreglo.correo}}</td>
+    </tr>
+  </tbody>
+</table>
 </div>
+
+<app-footer></app-footer>
+
