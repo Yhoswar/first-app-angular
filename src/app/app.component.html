@@ -7,69 +7,7 @@
 	<router-outlet></router-outlet>
 	<!--Para las rutas-->
 	
-	<h1 class=" bg-dark text-center text-white my-4 py-4">Ngif show = {{show}}</h1>
-
-	<div class="row">
-		
-		<div class="col-md">
-
-			<div class=" text-info" *ngIf="show; else showDos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nesciunt sunt inventore neque aspernatur sit aliquam doloremque maiores natus, provident velit qui beatae quia placeat itaque, nulla dolor eligendi. Voluptas.</div>
 	
-			<ng-template #showDos>
-			
-			<div class="text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione deserunt voluptates error minima, repudiandae, pariatur porro est cupiditate illum harum magni enim repellendus alias recusandae itaque qui! Laudantium, maxime, veniam.</div>
-
-			</ng-template>
-
-
-	<button class="btn btn-success m-1" (click)="show=!show">Accion show</button>	
-
-
-		</div>
-
-
-
-	</div>
-
-	<h1 class=" bg-dark text-center text-white my-4 py-4">ngClass</h1>
-
-	<div class="row">
-
-		<div class="col-md">
-
-			<div class="text-info d-none" [ngClass]="{'d-block':activo=='primero'}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nesciunt sunt inventore neque aspernatur sit aliquam doloremque maiores natus, provident velit qui beatae quia placeat itaque, nulla dolor eligendi. Voluptas.</div>
-			
-
-			<div class="text-danger d-none" [ngClass]="{'d-block':activo=='segundo'}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione deserunt voluptates error minima, repudiandae, pariatur porro est cupiditate illum harum magni enim repellendus alias recusandae itaque qui! Laudantium, maxime, veniam.</div>
-	
-
-		</div>
-
-	</div>
-
-	<button class="btn btn-dark m-1" (click)="activo='primero'">Accion ngClass</button>
-    <button class="btn btn-info m-1" (click)="activo='segundo'">Accion 2 ngClass</button>
-
-	<h1 class=" bg-dark text-center text-white my-4 py-4">[ngFor]</h1>
-
-  	<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Nombre</th>
-      <th scope="col">Apellido</th>
-      <th scope="col">Correo</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let arreglo of arreglos; index as i">
-      <th scope="row">{{i+1}}</th>
-      <td>{{arreglo.nombre}}</td>
-      <td>{{arreglo.apellido}}</td>
-      <td>{{arreglo.correo}}</td>
-    </tr>
-  </tbody>
-</table>
 </div>
 
 <app-footer></app-footer>

@@ -1,3 +1,40 @@
-<p>
-  contacto works!
-</p>
+
+<div class="mt-4">
+	<form>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="cedula">Cedula de identidad</label>
+      <div class="form-inline">
+      <select name="iden" id="iden" class="form-control">
+      	<option value="V">V</option>
+      </select>
+      <input type="text" class="form-control col-md"  name="cedula" id="cedula" placeholder="1234567" required>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="nombre">Nombre</label>
+      <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" required>
+    </div>
+
+     <div class="col-md-4 mb-3">
+      <label for="apellido">Apellido</label>
+      <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="direccion">Direccion</label>
+      <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Direccion" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="edad">Edad</label>
+      <input type="text" class="form-control" name="edad" id="edad" placeholder="Edad" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="fechanac">Fecha de nacimiento</label>
+      <input type="date" class="form-control" name="fechanac" id="fechanac" placeholder="Fecha de nacimiento" required>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+</div>
