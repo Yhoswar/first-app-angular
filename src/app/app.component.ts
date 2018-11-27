@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
 
-let valor:string;
-
-valor=prompt('Por favor Ingrese su nombre:','');
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,5 +8,4 @@ valor=prompt('Por favor Ingrese su nombre:','');
 
 export class AppComponent {
   title = 'my-app';
-  nombre=valor;
 }
