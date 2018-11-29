@@ -8,8 +8,7 @@ import {EquipoService} from './../equipo.service';
   styleUrls: ['./equipo.component.css']
 })
 export class EquipoComponent implements OnInit {
-
-
+  
 equipo:Array<any>=[];
 
   constructor(private ruta:ActivatedRoute,private _servicio:EquipoService) 
