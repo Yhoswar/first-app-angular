@@ -1,4 +1,12 @@
 <div class="mt-5">
 	<h2>Nosotros</h2>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure corporis aliquid dolores, vero! Accusantium commodi, omnis fuga similique atque dolor praesentium ex deserunt enim. Culpa iste error, voluptates unde cumque?</p>
+
+	<ul class="list-group">
+		<li class="list-group-item" *ngFor="let item of equipo">
+			<h6>Nombre : {{item.nombre}}</h6>
+			<h6>Especialidad : {{item.especialidad}}</h6>
+			<a href="#">Leer mas</a>
+		</li>
+	</ul>
 </div>

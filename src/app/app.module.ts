@@ -3,6 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+//service
+
+import {EquipoService} from './equipo.service'
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
@@ -35,7 +39,9 @@ const routes: Routes = [
     AppRoutingModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [
+  EquipoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
