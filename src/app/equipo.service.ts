@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class EquipoService {
 
-	equipo:any[]=
+	equipo:Array<any>=
 	[
 	{
 	nombre:'Yhoswar',
