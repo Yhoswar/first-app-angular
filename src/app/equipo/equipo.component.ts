@@ -9,7 +9,7 @@ import {EquipoService} from './../equipo.service';
 })
 export class EquipoComponent implements OnInit {
   
-equipo:[]=[];
+equipo:Array<ListeningState>=[];
 
   constructor(private ruta:ActivatedRoute,private _servicio:EquipoService) 
   	{
